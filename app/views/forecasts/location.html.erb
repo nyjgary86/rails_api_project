@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="http://bootswatch.com/flatly/bootstrap.min.css">
+  <div class="jumbotron">
+    <div class="container">
+      <h1>Address to Weather</h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="lead">The current temperature at <b><%=@the_address%></b> is <b><%=@the_temperature%></b> degrees.</p>
+        <p class="lead">The outlook for the next hour is: <b><%=@the_hour_outlook%></b>.</p>
+        <p class="lead">The outlook for the next day is: <b><%=@the_day_outlook%></b></p>
+      </div>
+    </div>
+  </div>
+</head>
+
+</html>
