@@ -14,6 +14,8 @@ class ForecastsController < ApplicationController
     parsed_data = JSON.parse(raw_data)
 
     @the_address = url_safe_address
+    @the_latitude = the_latitude
+    @the_longitude = the_longitude
     @the_temperature = parsed_data["currently"]["temperature"]
     @the_hour_outlook = parsed_data["hourly"]["data"][0]["summary"]
     @the_day_outlook = parsed_data["daily"]["data"][0]["summary"]
